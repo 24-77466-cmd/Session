@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fieldwear — Clothing built for movement</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <span class="logo">Fieldwear</span>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-right">
+      <span class="header-user">Hi, <strong id="headerUserName">friend</strong></span>
+      <button class="cart-btn" id="cartBtn">Bag (<span id="cartCount">0</span>)</button>
+      <button class="logout-btn" id="logoutBtn">Log out</button>
+    </div>
+  </div>
+</header>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-panel-head">
+    <h2>Your bag</h2>
+    <button class="cart-close" id="cartClose">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <span id="cartTotal">$0</span>
+    </div>
+  </div>
+</aside>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <h1>Clothes that hold up<br>to the day you actually have.</h1>
+    <p>Durable, unfussy pieces for people who move — cut from fabric that softens with wear, not with washing instructions.</p>
+    <a href="#shop" class="btn-primary">Shop the collection</a>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="shop-head">
+      <h2>New arrivals</h2>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tops">Tops</button>
+        <button class="filter-btn" data-filter="bottoms">Bottoms</button>
+        <button class="filter-btn" data-filter="outerwear">Outerwear</button>
+      </div>
+    </div>
+
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-inner">
+    <h2>Made to be worn, not preserved</h2>
+    <p>We use heavyweight cotton, brushed fleece, and wax-treated canvas — materials that get better with age. Every piece is cut with room to move and stitched to survive being lived in.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Fieldwear</span>
+    <span>Shipping worldwide, seven days a week</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
